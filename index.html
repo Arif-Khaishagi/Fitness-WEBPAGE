@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Website</title>
+  </head>
+  <!-- /* css Reset */ -->
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-image: url("images/finalwall.png");
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      /* backpointerground-color: rgb(80, 76, 76); */
+    }
+
+    .left {
+      color: blanchedalmond;
+      display: inline-block;
+      position: absolute;
+      left: 35px;
+      top: 5px;
+    }
+
+    .mid {
+      color: crimson;
+      /* border: 2px solid blue; */
+      display: block;
+      margin: auto;
+      width: 50%;
+      margin-top: 5px;
+    }
+
+    .right {
+      color: whitesmoke;
+      /* border: 2px solid rgb(95, 92, 92); */
+      display: inline;
+      position: absolute;
+      right: 35px;
+      top: 5px;
+    }
+
+    .navbar {
+      display: inline-block;
+    }
+
+    .navbar li {
+      display: inline;
+      font-size: 18px;
+    }
+
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 28px 17px;
+    }
+    .navbar li a:hover {
+      color: grey;
+      text-decoration: underline;
+      padding: 28px 17px;
+      cursor: context-menu;
+    }
+    .left img {
+      margin: 1px;
+      padding: 7px;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+    }
+    .left div {
+      text-align: center;
+      font-size: 10px;
+      cursor: pointer;
+    }
+
+    .btn {
+      margin: 0px 9px;
+      background-color: rgb(12, 2, 2);
+      color: lavender;
+      padding: 4px 14px;
+      border: 2px solid lavender;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: burlywood;
+    }
+
+    .container {
+      color: white;
+      border: 2px solid whitesmoke;
+      margin: 100px 80px;
+      padding: 24px 32px;
+      width: 30%;
+      border-radius: 25px;
+    }
+    .form input {
+      margin: 2px 2px;
+      padding: 2px 2px;
+    }
+
+    #date {
+      font-size: 13px;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="images/logo.jpeg" alt="" />
+        <div>ARIF's GYM</div>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#"> Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">Join us</button
+        ><button class="btn">Need Help</button>
+      </div>
+    </header>
+
+    <div class="container">
+      <h3>JOIN US NOW</h3>
+      <form action="noaction.php">
+        <div class="form">
+          <input type="text" name="name" placeholder="Enter Your Name" />
+        </div>
+        <div class="form">
+          <input
+            type="number"
+            name="number"
+            placeholder="Enter Your Contact Number"
+          />
+        </div>
+        <div class="form">
+          <input type="text" name="Adress" placeholder="Enter Your Adress" />
+        </div>
+        <div class="form">
+          <input type="email" name="email" placeholder="Enter Your email" />
+        </div>
+        <div class="form" id="date">
+          Enter Your DOB
+          <input type="date" name="date" placeholder="Enter Your DOB" />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
